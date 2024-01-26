@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculator</title>
+</head>
+<body>
+
+  <div id="calculator">
+    <p class="heading">Calculator</p>
+
+    <input id="input-area" readonly type="text">
+    <div id="btn" >
+
+      <button class="buttons1" onclick="
+        inputArea = ''
+        document.querySelector('#input-area').value = inputArea;
+      ">C</button>
+
+      <button class="buttons" onclick="
+      inputArea += '7';
+      document.querySelector('#input-area').value = inputArea;
+      ">7</button>
+
+      <button class="buttons" onclick="
+      inputArea += '8'
+      document.querySelector('#input-area').value = inputArea;
+      ">8</button>
+
+      <button class="buttons" onclick="
+      inputArea += '9'
+      document.querySelector('#input-area').value = inputArea;
+      ">9</button>
+
+      <button class="buttons1" onclick="
+      inputArea += '/'
+      document.querySelector('#input-area').value = inputArea;
+      ">/</button>
+
+      <button class="buttons" onclick="
+      inputArea += '4'
+      document.querySelector('#input-area').value = inputArea;
+    ">4</button>
+
+      <button class="buttons" onclick="
+      inputArea += '5'
+      document.querySelector('#input-area').value = inputArea;
+      ">5</button>
+
+      <button class="buttons" onclick="
+      inputArea += '6'
+      document.querySelector('#input-area').value = inputArea;
+      ">6</button>
+
+      <button class="buttons1" onclick="
+      inputArea += '*'
+      document.querySelector('#input-area').value = inputArea;
+      ">*</button>
+
+      <button class="buttons" onclick="
+      inputArea += '1'
+      document.querySelector('#input-area').value = inputArea;
+      ">1</button>
+
+      <button class="buttons" onclick="
+      inputArea += '2'
+      document.querySelector('#input-area').value = inputArea;
+      ">2</button>
+
+      <button class="buttons" onclick="
+      inputArea += '3'
+      document.querySelector('#input-area').value = inputArea;
+      ">3</button>
+
+      <button class="buttons1" class="orange" onclick="
+      inputArea += '+'
+      document.querySelector('#input-area').value = inputArea;
+      ">+</button>
+
+      <button class="buttons1" onclick="
+      inputArea += '-'
+      document.querySelector('#input-area').value = inputArea;
+      ">-</button>
+
+      <button class="buttons" onclick="
+      inputArea += '0'
+      document.querySelector('#input-area').value = inputArea;
+      ">0</button>
+
+      <button class="buttons1" onclick="
+      inputArea = eval(inputArea);
+      document.querySelector('#input-area').value = inputArea;
+      ">=</button>
+    </div>
+  </div>
+  
+  <script>
+    let inputArea = '';
+    document.querySelector('#input-area').value = inputArea;
+  </script>
+</body>
+</html>
